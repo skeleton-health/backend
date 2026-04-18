@@ -58,13 +58,13 @@ function serializeBigInt(obj) {
 // AES-256-GCM Encryption/Decryption
 function deriveKey(privateKey) {
   // Derive a 32-byte key from the private key using PBKDF2
-  const salt = Buffer.from('skeleton-poc-salt', 'utf-8');
+  const salt = Buffer.from('skeleton-v2-' + (privateKey.slice(0, 10) || 'default'), 'utf-8');
   return crypto.pbkdf2Sync(privateKey, salt, 100000, 32, 'sha256');
 }
 
 function encryptRecord(data, privateKey) {
   const key = deriveKey(privateKey);
-  const iv = crypto.randomBytes(16);
+  const iv = crypto.randomBytes(12);
   const cipher = crypto.createCipheriv('aes-256-gcm', key, iv);
 
   let encrypted = cipher.update(JSON.stringify(data), 'utf8', 'hex');
