@@ -1,0 +1,37 @@
+Skeleton Health
+Copyright (c) 2026 Skeleton Health Contributors
+
+This software is licensed under the MIT License.
+
+=== Third-Party Libraries ===
+
+This software includes the following third-party libraries:
+
+- ethers.js (MIT License) — https://github.com/ethers-io/ethers.js
+- IPFS HTTP Client (MIT/Apache-2.0) — https://github.com/ipfs/js-ipfs
+
+Each third-party library is licensed under its respective license terms.
+
+=== Trademark Notice ===
+
+"Skeleton Health", the Skeleton Health shield logo, and the Skeleton + Skin
+architecture model are trademarks of the Skeleton Health project.
+
+Permission is granted to use the "Skeleton Health" name and marks in the 
+context of contributing to, building on, or referencing this open-source 
+project. Use of the marks to endorse or promote products derived from this 
+software without explicit written permission is not permitted.
+
+=== Patent Notice ===
+
+This project is provided "as is" without any patent grants or assurances.
+Contributors retain their patent rights. The MIT License applies only to
+copyright, not patents. If you need patent assurances, contact the project
+maintainers.
+
+=== Cryptography Notice ===
+
+This software uses cryptographic algorithms (AES-256-GCM, PBKDF2) that may
+be subject to export controls in some jurisdictions. Users are responsible
+for compliance with local laws regarding the use and distribution of 
+cryptographic software.
